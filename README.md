@@ -24,3 +24,6 @@ PASSWORD=""
 ```
 npm start
 ```
+
+## Usage
+!queue \<YT LINK\>
