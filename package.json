@@ -1,0 +1,17 @@
+{
+  "name": "dgg-radio-bot",
+  "version": "1.0.0",
+  "description": "destiny.gg radio bot",
+  "license": "MIT",
+  "author": "wisepie",
+  "type": "commonjs",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js",
+    "start": "node --env-file=.env bot.js"
+  },
+  "dependencies": {
+    "dubapi": "^2.1.0",
+    "ws": "^8.18.3"
+  }
+}
