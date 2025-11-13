@@ -86,8 +86,10 @@ new DubAPI({ username: process.env.USERNAME, password: process.env.PASSWORD }, f
     try {
       username = data.user.username;
       if (username == "dggjamsBot") {
-        queue.shift();
-        console.log(`${username} can queue again`)
+        const user = queue.shift();
+        bot.sendChat(`${user} can queue again`);
+        console.log(`%c${user} can queue again`, "color:green");
+        console.log(queue);
       }
       console.log(`Now playing ${data.media.name} | requested by ${username}`);
     } catch (error) {
